@@ -1,6 +1,7 @@
 package com.app;
 
 import java.util.HashSet;
+import java.util.Iterator;
 
 public class HashSetDemo {
 
@@ -19,7 +20,14 @@ public class HashSetDemo {
 		hs.add(null);
 		System.out.println(hs);
 		System.out.println(hs.size());
-		hs.clear();
+		//hs.clear();
+		Iterator<String> itr = hs.iterator();
+		while(itr.hasNext())
+		{
+			String s = itr.next();
+			System.out.println(s);
+		}
+		System.out.println(hs.size());
 	}
 
 }
