@@ -17,6 +17,7 @@ public class VectorDemo {
 		v.addElement("Sarala");
 		System.out.println(v);
 		System.out.println(v.size());
+		System.out.println(v.capacity());
 	}
 
 }
