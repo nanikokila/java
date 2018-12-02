@@ -11,11 +11,11 @@ public class SeializationDemo {
 	public static void main(String[] args) throws Exception {
 
 		Dog d1 = new Dog();
-		FileOutputStream fos = new FileOutputStream("E://java.txt");
+		FileOutputStream fos = new FileOutputStream("E://JavaFiles//java.txt");
 		ObjectOutputStream oos = new ObjectOutputStream(fos);
 		oos.writeObject(d1);
 		
-		FileInputStream fis  = new FileInputStream("E://java.txt");
+		FileInputStream fis  = new FileInputStream("E://JavaFiles//java.txt");
 		ObjectInputStream ois = new ObjectInputStream(fis);
 		
 		Dog d2 = (Dog)ois.readObject();
