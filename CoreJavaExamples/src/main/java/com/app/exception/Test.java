@@ -7,7 +7,8 @@ public class Test {
 		try
 		{
 			System.out.println("try-block");
-			System.out.println(10/0);
+			//System.out.println(10/0);
+			System.exit(0);//with this statement finally block won't execute
 		}
 		
 		catch(ArithmeticException ae)
