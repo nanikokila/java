@@ -10,6 +10,16 @@ public class Test {
 	public static void main(String[] args) {
 
 		System.out.println(sum(new int[]{10,30,50,40}));
+		
+		/*
+		 * when we are assigning one array to another array internal elements won't copy
+		 * just reference variables will be assigned size i s not important but type must
+		 * be matched 
+		 */
+		int[] b = {10,20,50,40,30};
+		int[] c = {20,30};
+		b=c;
+		c=b;
 	}
 	
 	public static int sum(int[] x)
@@ -22,4 +32,5 @@ public class Test {
 		return total;
 	}
 
+	
 }
