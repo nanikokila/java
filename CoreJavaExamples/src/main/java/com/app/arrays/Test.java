@@ -1,5 +1,10 @@
 package com.app.arrays;
 
+/*
+ * possible valid arrays
+ * int[] a = {10,20,30};,char[] ch = {a,e,i,o,u};,
+ * int[] b = a;(valid),int[] b = ch;(invalid)[incompatible type]
+ */
 public class Test {
 
 	public static void main(String[] args) {
