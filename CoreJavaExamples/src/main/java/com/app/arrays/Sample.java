@@ -7,9 +7,14 @@ public class Sample {
 		String[] str = {"a","b"};
 		args = str;
 		System.out.println(args.length);
-		for(int i=0;i<args.length;i++)
+		/*for(int i=0;i<args.length;i++)
 		{
 			System.out.println(args[i]);
+		}*/
+		
+		for(String s:args)
+		{
+			System.out.println(s);
 		}
 	}
 
