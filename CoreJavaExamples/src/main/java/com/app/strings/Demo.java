@@ -37,6 +37,17 @@ public class Demo {
 		StringBuffer sb2 = new StringBuffer("ashok");
 		System.out.println(sb1==sb2);//false
 		System.out.println(sb1.equals(sb2));//false
+		
+		
+		/*
+		 * If reference variable is declared as final then we cannot perform any
+		 * reassignment for the reference variable it doesn't mean we cannot perform any
+		 * change in that object .That is by declaring a reference variable as final
+		 * we won't get any Immutability nature
+		 */
+		final StringBuffer sb3 = new StringBuffer("ashok");
+		sb3.append("reddy");
+		System.out.println(sb3);
 	}
 
 }
