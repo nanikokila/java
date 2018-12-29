@@ -13,6 +13,7 @@ public class BufferedReaderDemo {
 		String line = br.readLine();
 		while(line!=null)
 		{
+			
 			System.out.println(line);
 			line = br.readLine();
 		}
