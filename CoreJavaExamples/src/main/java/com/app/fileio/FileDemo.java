@@ -11,6 +11,12 @@ public class FileDemo {
 		System.out.println(f.exists());
 		f.createNewFile();
 		System.out.println(f.exists());
+		
+		File f2 = new File("E://JavaFiles//xyz.txt");
+		f2.mkdir();
+		File f3 = new File("E://JavaFiles//xyz.txt","java.txt");
+		f3.createNewFile();
+		System.out.println(f3.exists());
 	}
 
 }
