@@ -13,6 +13,8 @@ public class ArrayListDemo {
 		al.add("Naresh");
 		al.add("Vijay");
 		al.add("Ramya");
+		al.add("null");
+		al.add("love you");
 		System.out.println(al);
 		System.out.println(al.size());
 		al.add("Sathish");
@@ -20,6 +22,7 @@ public class ArrayListDemo {
 		al.remove(4);
 		System.out.println(al);
 		System.out.println(al.size());
+		al.remove(5);
 		al.add(4, "Ramya");
 		al.add("Ashok");
 		System.out.println(al);
