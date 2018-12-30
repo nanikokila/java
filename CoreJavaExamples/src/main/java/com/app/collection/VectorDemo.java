@@ -7,6 +7,7 @@ public class VectorDemo {
 	public static void main(String[] args) {
 
 		Vector<String> v = new Vector<String>();
+		System.out.println(v.capacity());
 		v.addElement("Ashok");
 		v.addElement("Reddy");
 		v.addElement("Naveen");
@@ -18,6 +19,8 @@ public class VectorDemo {
 		System.out.println(v);
 		System.out.println(v.size());
 		System.out.println(v.capacity());
+		
+		
 	}
 
 }
