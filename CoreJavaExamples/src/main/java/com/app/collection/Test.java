@@ -12,6 +12,8 @@ public class Test {
 		System.out.println(m);
 		m.putIfAbsent(100, "Chiru");//Pawan
 		m.putIfAbsent(103, "Kalyan");
+		m.remove(103);
+		m.replace(102, "Ram", "Charan");
 		System.out.println(m);
 	}
 
