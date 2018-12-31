@@ -8,7 +8,7 @@ public class ThreadGroupDemo {
 		System.out.println(Thread.currentThread().getThreadGroup().getParent().getName());
 		ThreadGroup tg = new ThreadGroup("Parent Group");
 		System.out.println(tg.getParent().getName());
-		ThreadGroup tg1 = new ThreadGroup(tg, "Chile Group");
+		ThreadGroup tg1 = new ThreadGroup(tg, "Child Group");
 		System.out.println(tg1.getParent().getName());
 		
 		ThreadGroup g = new ThreadGroup("tg");
