@@ -10,9 +10,21 @@ http://www.springframework.org/schema/context
 http://www.springframework.org/schema/context/springcontext.xsd">
 
 	<bean name="emp" class="com.sathya.model.Employee">
-		<property name="empId" value="1" />
-		<property name="empName" value="Ashok" />
-		<property name="empSal" value="10.0" />
+		<!-- value as attribute -->
+		<!-- <property name="empId" value="1" /> <property name="empName" value="Ashok" 
+			/> <property name="empSal" value="10.0" /> </bean> -->
+
+		<!-- value as tag -->
+
+		<property name="empId">
+			<value>1</value>
+		</property>
+		<property name="empName">
+		<value>Ashok</value>
+		</property>
+		<property name="empSal">
+		<value>10.0</value>
+		</property>
 	</bean>
 
 </beans>
