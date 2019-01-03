@@ -15,11 +15,13 @@ public class Test {
 		Session session  = factory.openSession();
 		Transaction tx = session.beginTransaction();
 		Employee  emp = new Employee();
-		emp.setEmpId(1);
-		emp.setEmpName("AshokReddy");
-		emp.setEmpSal(10.0);
+		emp.setEmpId(9);
+		emp.setEmpName("Reddy");
+		emp.setEmpSal(7.0);
 		session.save(emp);
+		//session.update(emp);
 		tx.commit();
+		System.out.println("Updated successfully...");
         session.close();
 	}
 
