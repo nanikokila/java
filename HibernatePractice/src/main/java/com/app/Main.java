@@ -6,6 +6,7 @@ import org.hibernate.cfg.Configuration;
 
 public class Main {
 
+	@SuppressWarnings("deprecation")
 	public static void main(String[] args) {
 
 		Configuration conf = new Configuration();
