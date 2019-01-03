@@ -15,8 +15,22 @@ public class Main {
 		/*Transaction tx = session.beginTransaction();
 		Employee  emp = new Employee();*/
 		
+		/*
+		 * If no row present in database it returns null in get()
+		 */
+		
+		/*
 		Employee emp = (Employee)session.get(Employee.class, 5);
+		System.out.println(emp);*/
+		
+		
+		/*
+		 * if no row present in database it returns objectNotFoundException
+		 */
+		
+		Employee emp = (Employee)session.load(Employee.class, 1);
 		System.out.println(emp);
+		
 	}
 
 }
