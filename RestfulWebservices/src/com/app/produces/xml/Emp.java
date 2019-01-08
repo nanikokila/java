@@ -1,10 +1,12 @@
-package com.app.produces;
+package com.app.produces.xml;
 
-import org.codehaus.jackson.annotate.JsonIgnore;
+import javax.xml.bind.annotation.XmlRootElement;
 
-public class Employee {
+@XmlRootElement
+public class Emp {
 
-	@JsonIgnore
+
+
 	private int empId;
 	private String empName;
 	private double empSal;
@@ -32,4 +34,5 @@ public class Employee {
 	}
 	
 	
+
 }
