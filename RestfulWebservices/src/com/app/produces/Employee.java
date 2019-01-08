@@ -1,10 +1,10 @@
 package com.app.produces;
 
-import org.codehaus.jackson.annotate.JsonIgnore;
+/*import org.codehaus.jackson.annotate.JsonIgnore;*/
 
 public class Employee {
 
-	@JsonIgnore
+	/*@JsonIgnore*/
 	private int empId;
 	private String empName;
 	private double empSal;
