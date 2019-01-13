@@ -19,4 +19,14 @@
     <servlet-name>MyFirstServlet</servlet-name>
     <url-pattern>/srv</url-pattern>
   </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>MyDataServlet</display-name>
+    <servlet-name>MyDataServlet</servlet-name>
+    <servlet-class>com.app.data.MyDataServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>MyDataServlet</servlet-name>
+    <url-pattern>/srv1</url-pattern>
+  </servlet-mapping>
 </web-app>
