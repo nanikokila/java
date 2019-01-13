@@ -31,8 +31,18 @@
     <servlet-name>FormReadServlet</servlet-name>
     <url-pattern>/srv2</url-pattern>
   </servlet-mapping>
-  
   <welcome-file-list>
-  <welcome-file>Register.html</welcome-file>
+    <welcome-file>Register.html</welcome-file>
   </welcome-file-list>
+  <servlet>
+    <description></description>
+    <display-name>LifeCycleServlet</display-name>
+    <servlet-name>LifeCycleServlet</servlet-name>
+    <servlet-class>com.app.lifecycle.LifeCycleServlet</servlet-class>
+    <load-on-startup>10</load-on-startup>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>LifeCycleServlet</servlet-name>
+    <url-pattern>/lifecycle</url-pattern>
+  </servlet-mapping>
 </web-app>
