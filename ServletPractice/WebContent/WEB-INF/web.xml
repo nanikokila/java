@@ -69,10 +69,10 @@
     <servlet-name>MyServletConfig1</servlet-name>
     <url-pattern>/config1</url-pattern>
   </servlet-mapping>
-    <context-param>
-   <param-name>mydata</param-name>
-   <param-value>HelloaData</param-value>
-   </context-param>
+  <context-param>
+    <param-name>mydata</param-name>
+    <param-value>HelloaData</param-value>
+  </context-param>
   <servlet>
     <description></description>
     <display-name>MyServletContext</display-name>
@@ -82,5 +82,15 @@
   <servlet-mapping>
     <servlet-name>MyServletContext</servlet-name>
     <url-pattern>/context</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>RegInfoServlet</display-name>
+    <servlet-name>RegInfoServlet</servlet-name>
+    <servlet-class>com.app.servlet.RegInfoServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>RegInfoServlet</servlet-name>
+    <url-pattern>/srv4</url-pattern>
   </servlet-mapping>
 </web-app>
