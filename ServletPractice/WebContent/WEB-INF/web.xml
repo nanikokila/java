@@ -45,4 +45,28 @@
     <servlet-name>LifeCycleServlet</servlet-name>
     <url-pattern>/lifecycle</url-pattern>
   </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>MyServletConfig</display-name>
+    <servlet-name>MyServletConfig</servlet-name>
+    <servlet-class>com.app.servletconfig.MyServletConfig</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>MyServletConfig</servlet-name>
+    <url-pattern>/config</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>MyServletConfig1</display-name>
+    <servlet-name>MyServletConfig1</servlet-name>
+    <servlet-class>com.app.servletconfig.MyServletConfig1</servlet-class>
+    <init-param>
+    <param-name>mydata</param-name>
+    <param-value>Hello</param-value>
+    </init-param>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>MyServletConfig1</servlet-name>
+    <url-pattern>/config1</url-pattern>
+  </servlet-mapping>
 </web-app>
