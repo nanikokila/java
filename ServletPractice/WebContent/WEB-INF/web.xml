@@ -61,12 +61,26 @@
     <servlet-name>MyServletConfig1</servlet-name>
     <servlet-class>com.app.servletconfig.MyServletConfig1</servlet-class>
     <init-param>
-    <param-name>mydata</param-name>
-    <param-value>Hello</param-value>
+      <param-name>mydata</param-name>
+      <param-value>Hello</param-value>
     </init-param>
   </servlet>
   <servlet-mapping>
     <servlet-name>MyServletConfig1</servlet-name>
     <url-pattern>/config1</url-pattern>
+  </servlet-mapping>
+    <context-param>
+   <param-name>mydata</param-name>
+   <param-value>HelloaData</param-value>
+   </context-param>
+  <servlet>
+    <description></description>
+    <display-name>MyServletContext</display-name>
+    <servlet-name>MyServletContext</servlet-name>
+    <servlet-class>com.app.servletcontext.MyServletContext</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>MyServletContext</servlet-name>
+    <url-pattern>/context</url-pattern>
   </servlet-mapping>
 </web-app>
