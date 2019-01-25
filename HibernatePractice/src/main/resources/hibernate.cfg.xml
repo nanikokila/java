@@ -16,7 +16,7 @@
    
    <mapping class  = "com.app.Employee"/>
    <mapping class = "com.app.entity.Emp"/>
-   <mapping class = "com.nt.Customers"/>
-   <mapping class = "com.nt.Vendor"/>
+   <mapping class = "org.sathya.Customers"/>
+   <mapping class = "org.sathya.Vendor"/>
 	</session-factory>
 </hibernate-configuration>        
