@@ -1,12 +1,19 @@
 package com.app.exception;
 
+import org.apache.log4j.Logger;
+
 public class Demo {
 
+	private static Logger log = Logger.getLogger(Demo.class);
 	//control flow
 	public static void main(String[] args) {
 
 		try
 		{
+			if(log.isDebugEnabled())
+			{
+				log.debug("welcome to exception handling");
+			}
 			System.out.println("statement1");
 			System.out.println("statement2");
 			System.out.println(10/0);
