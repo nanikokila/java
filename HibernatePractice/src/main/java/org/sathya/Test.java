@@ -31,7 +31,7 @@ public class Test {
 		Session session = sf.openSession();
 		
 		Query qry= session.createQuery("select v.vendorName, c.customerName from Vendor v Left Join v.children c");
-
+        log.info("data fetched successfully using left join");
 		List l = qry.list();
 		Iterator it=l.iterator();
 
