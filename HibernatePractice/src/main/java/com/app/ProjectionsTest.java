@@ -37,13 +37,13 @@ public class ProjectionsTest {
 		/*Creating Projections query*/
 		
 		Criteria crit = ses.createCriteria(Employee.class);
-		crit.setProjection(Projections.property("empName"));
+		crit.setProjection(Projections.property("empId"));
 		log.info("Criteria query is created using Projections class..");
 		List list = crit.list();
 		Iterator itr = list.iterator();
 		while(itr.hasNext())
 		{
-			String emp = (String)itr.next();
+			Integer emp = (Integer)itr.next();
 			log.info(emp);
 		}
 		ses.close();

@@ -38,7 +38,7 @@ public class Test {
 		
 		/*Creating Criteri query*/
 		Criteria crit = ses.createCriteria(Employee.class);
-		Criterion c1 = Restrictions.gt("empSal", new Double(20000.0));
+		Criterion c1 = Restrictions.eq("empId", new Integer(1));
 		crit.add(c1);
 		crit.addOrder(Order.desc("empSal"));
 		log.info("Order of salaries...");
