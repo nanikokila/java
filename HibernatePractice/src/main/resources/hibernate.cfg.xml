@@ -15,7 +15,6 @@
    <property name="hbm2ddl.auto">update</property>
    
    <mapping class  = "com.app.Employee"/>
-   <mapping class = "com.app.entity.Emp"/>
    <mapping class = "org.sathya.Customers"/>
    <mapping class = "org.sathya.Vendor"/>
 	</session-factory>

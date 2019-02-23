@@ -20,16 +20,16 @@ public class ForOurLogic {
 		Session session = factory.openSession();		
 
 	      Vendor v=new Vendor();
-	      v.setVendorId(100);
-	      v.setVendorName("java4s");
+	      v.setVendorId(105);
+	      v.setVendorName("Spring boot");
 
 	      Customers c1=new Customers();
-	      c1.setCustomerId(500);
-	      c1.setCustomerName("customer1");
+	      c1.setCustomerId(900);
+	      c1.setCustomerName("customer7");
 
 	      Customers c2=new Customers();
-	      c2.setCustomerId(501);
-	      c2.setCustomerName("customer2");
+	      c2.setCustomerId(901);
+	      c2.setCustomerName("customer8");
 
 	      Set s=new HashSet();
 	      s.add(c1);

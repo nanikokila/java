@@ -12,7 +12,7 @@ import javax.persistence.OneToMany;
 import javax.persistence.Table;
 
 @Entity
-@Table(name = "Ven_dor")
+@Table(name = "ASHOK_TABLE")
 
 public class Vendor {
 
