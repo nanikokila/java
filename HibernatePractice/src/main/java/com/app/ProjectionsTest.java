@@ -12,11 +12,9 @@ import org.hibernate.Criteria;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.cfg.Configuration;
-import org.hibernate.criterion.Criterion;
-import org.hibernate.criterion.Order;
-import org.hibernate.criterion.Restrictions;
+import org.hibernate.criterion.Projections;
 
-public class Test {
+public class ProjectionsTest {
 
 	private static Logger log = Logger.getLogger(Employee.class);
 	@SuppressWarnings("rawtypes")
@@ -36,22 +34,17 @@ public class Test {
 		Session ses = factory.openSession();
 		log.info("Session is opened");
 		
-		/*Creating Criteri query*/
+		/*Creating Projections query*/
+		
 		Criteria crit = ses.createCriteria(Employee.class);
-		Criterion c1 = Restrictions.gt("empSal", new Double(20000.0));
-		crit.add(c1);
-		crit.addOrder(Order.desc("empSal"));
-		log.info("Order of salaries...");
-		log.info("Criteria query is created using Restrictions class...");
+		crit.setProjection(Projections.property("empName"));
+		log.info("Criteria query is created using Projections class..");
 		List list = crit.list();
-		log.info("List total size:"+list.size());
 		Iterator itr = list.iterator();
 		while(itr.hasNext())
 		{
-			Employee emp = (Employee)itr.next();
-			log.info(emp.getEmpId());
-			log.info(emp.getEmpName());
-			log.info(emp.getEmpSal());
+			String emp = (String)itr.next();
+			log.info(emp);
 		}
 		ses.close();
 		factory.close();
