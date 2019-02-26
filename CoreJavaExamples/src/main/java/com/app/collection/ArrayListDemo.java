@@ -1,3 +1,4 @@
+
 package com.app.collection;
 
 import java.util.ArrayList;
@@ -25,6 +26,7 @@ public class ArrayListDemo {
 		al.add("Naresh");
 		al.add("Vijay");
 		al.add("Ramya");
+		
 		al.add("null");
 		al.add("love you");
 		log.debug("it prints arraylist");
