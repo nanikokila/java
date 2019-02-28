@@ -2,7 +2,6 @@
 package com.app.collection;
 
 import java.util.ArrayList;
-
 import org.apache.log4j.Appender;
 import org.apache.log4j.ConsoleAppender;
 import org.apache.log4j.Layout;
@@ -41,8 +40,10 @@ public class ArrayListDemo {
 		System.out.println(al.size());
 		al.remove(5);
 		log.info("an element is added to an arraylist");
+		//Collections.unmodifiableList(al);
 		al.add(4, "Ramya");
 		al.add("Ashok");
+		//Collections.unmodifiableList(al);
 		System.out.println(al);
 		System.out.println(al.size());
 		log.info("total arraylist is cleared ");
